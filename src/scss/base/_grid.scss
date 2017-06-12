@@ -1,0 +1,23 @@
+/*========================================
+
+	Grid Styles
+
+========================================*/
+
+@import "susy";
+
+$susy: (
+  columns: 12, //total columns
+  container: 1120px, //max width of container
+  gutters: 1/4, //gutter width
+  global-box-sizing: border-box
+);
+
+@include border-box-sizing;
+
+$susy-media: (
+  large-mobile: 567px,
+  phablet: 759px,
+  tablet: 767px,
+  small-desktop: 1023px
+);

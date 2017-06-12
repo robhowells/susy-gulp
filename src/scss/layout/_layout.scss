@@ -1,0 +1,43 @@
+/*========================================
+
+	Layout Styles
+
+========================================*/
+
+.main-wrapper {
+	@include container;
+}
+
+.row {
+	@extend %clearfix;
+}
+
+.container {
+	padding: 0 (gutter(12) * 2); //gutter of 12 column grid, multiplied by 2
+}
+
+header {
+	margin-bottom: 25px;
+	background: $light-grey;
+}
+
+article {
+	margin-bottom: 25px;
+	background: $light-grey;
+	@include susy-media(phablet) {
+		@include span(8 of 12); //item width as percentage of total columns (12) = 8/12
+	}
+}
+
+aside {
+	margin-bottom: 25px;
+	background: $light-grey;
+	@include susy-media(phablet) {
+		@include span(4 of 12 last); //item width as percentage of total columns (12) = 4/12. Last block in columns
+	}
+}
+
+footer {
+	clear: both;
+	background: $light-grey;
+}

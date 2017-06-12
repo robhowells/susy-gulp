@@ -1,0 +1,37 @@
+/*========================================
+
+	Base Styles
+
+========================================*/
+
+@import
+	'base/grid',
+	'base/reset',
+	'base/normalize',
+	'base/base';
+
+/*========================================
+
+	Global Styles
+
+========================================*/
+
+@import
+	'global/colors';
+
+/*========================================
+
+	Layout Styles
+
+========================================*/
+
+@import
+	'layout/layout';
+
+	/*========================================
+		Component Styles
+	========================================*/
+
+	@import
+		'layout/components/gallery',
+		'layout/components/footer-icon';

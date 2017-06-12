@@ -1,0 +1,18 @@
+/*========================================
+
+	Gallery Styles
+
+========================================*/
+
+.gallery {
+	&__item {
+		@include gallery(2 of 6); //gallery style grid
+		margin-bottom: gutter(6);
+		&:nth-last-child(-n + 3) {
+			margin-bottom: 0; //removes bottom margin of last three items
+		}
+		img {
+			width: 100%;
+		}
+	}
+}

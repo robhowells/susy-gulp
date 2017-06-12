@@ -1,0 +1,13 @@
+/*========================================
+
+	Footer Icon Styles
+
+========================================*/
+
+.footer-icon {
+	@include push(4); //offset of total columns (12) = 4/12
+	&__item {
+		@include span(1 of 6); //new sub-grid. Item width as percentage of total columns (6) = 1/6
+		background: $dark-grey;
+	}
+}
